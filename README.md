@@ -1,6 +1,6 @@
 # Whos's this for?
 #### _Target demographic:_
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My target demo’ are those who would like assistance with budgeting for their automotive expenses.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My target demo’ are those who would like assistance with budgeting for their automotive expenses. This includes all types of propulsion; electric, diesel and petrol. As well as all types of vehicles; motorcycles, cars and trucks.
 
 <br>
 
