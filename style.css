@@ -1,0 +1,30 @@
+body {
+  margin: 25px;
+  background-color: aqua;
+}
+
+#vehicle {
+  display: flex;
+  justify-content: center;
+}
+
+#statistics {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mpgAverage {
+  display: flex;
+  justify-content: center;
+}
+
+  {
+  border: 2px solid;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}

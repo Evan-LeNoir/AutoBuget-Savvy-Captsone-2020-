@@ -1,25 +1,19 @@
-# Savvy Coders Project Boilerplate Starter Kit
+# Whos's this for?
+#### _Target demographic:_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My target demo’ are those who would like assistance with budgeting for their automotive expenses.
 
-## Overview
+<br>
 
-This template repository contains several opinionated, 'starter' files and settings to help Savvy Coder students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
+# What is it? What's the purpose?
+#### _Definition Statement:_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A tool/website that helps people budget their expenses for their car(s).
 
-In addition to a '.gitignore' and some VS Code specific extensions and settings, it includes the 'recommended' settings for:
+<br>
 
-1. [ESLint](eslint.org)
-2. [Stylelint](stylelint.io)
-3. [Prettier](prettier.io)
+# Cool, but why do I need this?
+#### _High-level story (elevator pitch):_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I think we’ve all been in the situation of tallying up our automotive expenses after each month and frowned and or sighed at the frightful overspending that happened on multiple occasions.
 
-## Get Started
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your car is the life-line to your job, recreation and pleasure over great distances; it’s a very important tool that can easily make or break families. That’s where this site aims to help take some of the edge off, by helping you to budget the foreseen and the unforeseeable costly upkeep or even costly emergency repairs.
 
-**First and foremost,** make sure that your local machine is set up with all of the 'dev environment tooling' as per [this guide...](https://www.notion.so/codefinity/Setting-up-a-Local-Dev-Environment-97de62a546f943fbbc7a246b4785a343)
-
-Well, after establishing your directory structure on your local machine, (e.g. '~/Code/SavvyCoders'), kindly [follow these girections](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) - essentially, there should be a button 👆🏾that says **Use this template.**
-
-Once this repo has been created on your GitHub, you can click on the button to 'clone' it as usual. Once it's `clone`d to your local machine, kindly `cd` into the directory and **be sure to do:** `npm i` to get all of the goodies. If you see any _errors_ (warnings are 🙆🏾‍♂️) on Windows, you may have to do `npm install`.
-
-Now, enter `code .` to open this project in VS Code, and look for a prompt to 'install some extensions' once inside VS Code (in the bottom right of your screen). You should install these. 👍🏾
-
-Update this README and make any other initial changes or 🌱 files, etc. Go ahead and do your usual `git` steps, etc. etc. etc.
-
-**Note:** This is a template repository, no need to 'fork it.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once you’ve entered your car’s information, you’ll then log data like the fuel type it uses, maintenance intervals and misc things that your car may require; all in a clean and concise layout.
