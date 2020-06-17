@@ -1,28 +1,11 @@
 import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
-import { Navigo } from "navigo";
+import Navigo from "navigo";
+import { capitalize } from "lodash";
 import axios from "axios";
 import { auth, db } from "./firebase";
 
 const router = new Navigo(window.location.origin);
-
-const render = (st = state.Home) => {
-  //this can also be initiated as (const render = (st = state.Home) => {})
-  document.querySelector("#root").innerHTML = `
-    ${Header(st)}
-    ${Nav(state.Links)}
-    ${Main(st)}
-    ${Footer()}`;
-  router.updatePageLinks();
-  addEventListener();
-};
-render();
-
-// router.on({
-//   "/": params => render(state[capitalize(params.page)]),
-//   "/": () => render(state.Home)
-// });
-// .resolve();
 
 router
   .on({
@@ -35,6 +18,24 @@ router
     }
   })
   .resolve();
+
+function render(st = state.Home) {
+  console.log(st);
+  //this can also be initiated as (const render = (st = state.Home) => {})
+  document.querySelector("#root").innerHTML = `
+    ${Header(st)}
+    ${Nav(state.Links)}
+    ${Main(st)}
+    ${Footer()}`;
+  router.updatePageLinks();
+  addEventListener();
+}
+
+// router.on({
+//   "/": params => render(state[capitalize(params.page)]),
+//   "/": () => render(state.Home)
+// });
+// .resolve();
 
 function addEventListener() {
   document.querySelector("#testNav").forEach(navLink => {
