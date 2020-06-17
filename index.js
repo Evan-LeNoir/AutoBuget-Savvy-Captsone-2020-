@@ -1,24 +1,28 @@
 import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
 import { Navigo } from "navigo";
-import { capitalize } from "lodash";
 import axios from "axios";
 import { auth, db } from "./firebase";
-console.log("Requesting Data from API");
+
 const router = new Navigo(window.location.origin);
 
-const render = st => {
+const render = (st = state.Home) => {
   //this can also be initiated as (const render = (st = state.Home) => {})
   document.querySelector("#root").innerHTML = `
     ${Header(st)}
     ${Nav(state.Links)}
     ${Main(st)}
-    ${Footer(state.Footer)}`;
+    ${Footer()}`;
   router.updatePageLinks();
-  addNavToggle();
   addEventListener();
 };
 render();
+
+// router.on({
+//   "/": params => render(state[capitalize(params.page)]),
+//   "/": () => render(state.Home)
+// });
+// .resolve();
 
 router
   .on({
@@ -32,15 +36,8 @@ router
   })
   .resolve();
 
-function addNavToggle() {
-  // add menu toggle to bars icon in nav bar
-  document.querySelector(".fa-bars").addEventListener("click", () => {
-    document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-  });
-}
-
 function addEventListener() {
-  document.querySelectorAll("nav a").forEach(navLink => {
+  document.querySelector("#testNav").forEach(navLink => {
     navLink.addEventListener("click", event => {
       event.preventDefault();
       //       //      render(state[event.target.textContent]); This does the same thing as belore but as one line instead of multiple
