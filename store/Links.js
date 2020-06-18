@@ -1,1 +1,1 @@
-export default ["Petrol", "SignIn"];
+export default ["Petrol", "Home"];

@@ -19,16 +19,15 @@ router
   })
   .resolve();
 
+//this can also be initiated as (const render = (st = state.Home) => {})
 function render(st = state.Home) {
   console.log(st);
-  //this can also be initiated as (const render = (st = state.Home) => {})
   document.querySelector("#root").innerHTML = `
     ${Header(st)}
     ${Nav(state.Links)}
     ${Main(st)}
     ${Footer()}`;
   router.updatePageLinks();
-  addEventListener();
 }
 
 // router.on({
@@ -37,14 +36,14 @@ function render(st = state.Home) {
 // });
 // .resolve();
 
-function addEventListener() {
-  document.querySelector("#testNav").forEach(navLink => {
-    navLink.addEventListener("click", event => {
-      event.preventDefault();
-      //       //      render(state[event.target.textContent]); This does the same thing as belore but as one line instead of multiple
-      let page = event.target.textContent;
-      let pieceOfState = state[page];
-      render(pieceOfState);
-    });
-  });
-}
+// function addEventListener() {
+//   document.querySelector("#testNav").forEach(navLink => {
+//     navLink.addEventListener("click", event => {
+//       event.preventDefault();
+//       //       //      render(state[event.target.textContent]); This does the same thing as belore but as one line instead of multiple
+//       let page = event.target.textContent;
+//       let pieceOfState = state[page];
+//       render(pieceOfState);
+//     });
+//   });
+// }
