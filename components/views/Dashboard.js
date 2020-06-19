@@ -15,7 +15,7 @@ export default () => `
   <input type="submit" id="addFuel" name="fuelUp" value="Fuel UP!" />
   <input type="submit" id="maintain" name="Maintenance" value="Log Maintenance" />
 </form>
-<h2 id="vehicle">Your -insert selected vehicle here-'s statics</h2>
+<h2 id="vehicle">Your -<i>insert selected vehicle here</i>-'s statics</h2>
 <section id="statistics">
   <div id="fuelStatistics">
     <h3>Last Fuel-Up:</h3>

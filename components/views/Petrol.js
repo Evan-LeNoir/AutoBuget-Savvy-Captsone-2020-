@@ -57,6 +57,6 @@ export default () => `  <h1>Patrol Powered Cars</h1>
       <label for="carName">What's your vehicle's name?</label>
       <input type="Car Name" name="carName" id="carName" placeholder="ie; Betsy, Big Bertha, Ol'Faithful, etc etc">
     </div>
-    <input type="submit" name="addCar" value="Add This Car">
+    <input type="submit" name="addCar" value="Add This Vehicle">
   </form>
 </div>`;

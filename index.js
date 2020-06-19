@@ -21,7 +21,7 @@ router
 
 //this can also be initiated as (const render = (st = state.Home) => {})
 function render(st = state.Home) {
-  console.log(st);
+  // console.log(st);
   document.querySelector("#root").innerHTML = `
     ${Header(st)}
     ${Nav(state.Links)}

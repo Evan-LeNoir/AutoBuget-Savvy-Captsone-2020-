@@ -3,6 +3,12 @@ body {
   background-color: aqua;
 }
 
+section#log {
+  text-align: center;
+}
+
+section > form > div#col {}
+
 #vehicle {
   display: flex;
   justify-content: center;
@@ -14,8 +20,8 @@ body {
 }
 
 .mpgAverage {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .SPACEHOLDER {
@@ -24,7 +30,20 @@ body {
 }
 
 footer {
+  text-align: center;
+}
+
+.navTest {
+  border: 2px solid black;
+  border-radius: 35px;
+  padding: 0px 35px 0px;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  flex-direction: column;
+}
+
+.navTest ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }

@@ -1,7 +1,9 @@
 export default navLink => `
-<div class="test area this will need to be removed once has become an SPA and data can be handled.">
-<p>For test purposes only right now</p>
+<div class="navTest">
+<p>For test purposes only right now. Will be removed once a public version is ready.</p>
 <ul>
-  ${navLink.map(link => `<li><a href="/${link}" data-navigo>${link}</a></li>`)}
+  ${navLink
+    .map(link => `<li><a href="/${link}" data-navigo>${link}</a></li>`)
+    .join(" ")}
 </ul>
 </div>`;

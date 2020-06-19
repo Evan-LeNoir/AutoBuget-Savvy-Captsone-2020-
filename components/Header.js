@@ -1,4 +1,4 @@
 export default st => `
 <head>
-  <title>AutoBudget</title>
+  <h1><center>${st.header}</center></h1>
 </head>`;
